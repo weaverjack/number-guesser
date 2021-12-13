@@ -3,17 +3,15 @@ let computerScore = 0;
 let currentRoundNumber = 1;
 
 // Write your code below:
-//generate random number for computer and human to guess 0 to 9
 function generateTarget() {
     return Math.floor(Math.random()*10)
 }
 
-
 //confirming that generate target works
-console.log('Secret Target number:' + generateTarget());
+console.log(generateTarget());
 
 //determine who's guess is closer to the target number
-
+/*
 function compareGuesses(human, computer, target) {
 let humanDistance = target - human;
 if (humanDistance <0) {
@@ -30,7 +28,7 @@ return computerDistance
 compareGuesses(2, 8, target)
 
 
-
+*/
 
 
 /*

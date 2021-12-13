@@ -7,28 +7,39 @@ function generateTarget() {
     return Math.floor(Math.random()*10)
 }
 
-//confirming that generate target works
-console.log(generateTarget());
+//confirming that generate target works this may produce a different number every time invoked.
+//console.log('target number = ' + generateTarget());
 
+//assign variable to generateTarget so it can be passed into function for comparing guesses
+const target = generateTarget();
+console.log('secret target' + target)
 //determine who's guess is closer to the target number
-/*
+
 function compareGuesses(human, computer, target) {
-let humanDistance = target - human;
+    let humanDistance = target - human;
 if (humanDistance <0) {
     humanDistance *= -1;
 };
+console.log(humanDistance);
 let computerDistance = target - computer;
 if (computerDistance<0) {
     computerDistance *= -1;
 };
-return humanDistance
-return computerDistance
+console.log(computerDistance)
+if (computerDistance>=humanDistance) {
+    console.log("true")
+} else {
+    console.log('false')
+}
 }
 
-compareGuesses(2, 8, target)
+compareGuesses(1, 8, target);
+compareGuesses(2, 8, target);
+compareGuesses(2, 6, target);
 
 
-*/
+
+
 
 
 /*
